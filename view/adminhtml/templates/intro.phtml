@@ -1,0 +1,40 @@
+<?php
+/**
+ * Mini-documentation du module, en haut de sa page de configuration.
+ *
+ * @var \Magento\Backend\Block\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Maxcode\Core\ViewModel\ModuleIntro $viewModel
+ */
+$viewModel = $block->getData('view_model');
+$intro = $viewModel->getIntro($block->getData('intro_id'));
+if ($intro === null) {
+    return;
+}
+$titleId = 'maxcode-core-intro-title';
+?>
+<section class="maxcode-core-intro" aria-labelledby="<?= $escaper->escapeHtmlAttr($titleId) ?>">
+    <h2 id="<?= $escaper->escapeHtmlAttr($titleId) ?>" class="maxcode-core-intro__title">
+        <?= $escaper->escapeHtml(__('About %1', $intro['name'])) ?>
+    </h2>
+    <p class="maxcode-core-intro__summary"><?= $escaper->escapeHtml($intro['summary']) ?></p>
+    <?php if ($intro['points'] !== []): ?>
+        <ul class="maxcode-core-intro__points">
+            <?php foreach ($intro['points'] as $point): ?>
+                <li><?= $escaper->escapeHtml($point) ?></li>
+            <?php endforeach; ?>
+        </ul>
+    <?php endif; ?>
+    <?php if ($intro['links'] !== []): ?>
+        <p class="maxcode-core-intro__docs">
+            <?php foreach ($intro['links'] as $link): ?>
+                <a href="<?= $escaper->escapeUrl($link['url']) ?>"<?= $link['external'] ? ' target="_blank" rel="noopener noreferrer"' : '' ?>>
+                    <?= $escaper->escapeHtml($link['label']) ?>
+                    <?php if ($link['external']): ?>
+                        <span class="maxcode-core-visually-hidden"><?= $escaper->escapeHtml(__('(opens in a new tab)')) ?></span>
+                    <?php endif; ?>
+                </a>
+            <?php endforeach; ?>
+        </p>
+    <?php endif; ?>
+</section>

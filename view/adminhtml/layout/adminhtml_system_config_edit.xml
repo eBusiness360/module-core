@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Maxcode_Core::css/maxcode-core.css"/>
+    </head>
+    <body>
+        <!--
+            Haut de la page de configuration d'un module Maxcode, dans cet ordre :
+            1. le bandeau de l'éditeur eBusiness360 (section Core seulement) ;
+            2. la mini-documentation du module (informative, toujours visible) ;
+            3. le bandeau « Allez plus loin » (promotionnel, un seul).
+            Chaque bloc ne produit rien si le module ouvert ne déclare rien pour cette section
+            (voir etc/adminhtml/di.xml). Pour insérer l'introduction ou le bandeau ailleurs, déclarer
+            le même bloc avec l'argument intro_id ou promotion_id.
+
+            Le bloc update.badge n'affiche rien lui-même : il pose le compteur de mises à jour sur
+            l'onglet Maxcode du menu de gauche, sur toutes les pages de configuration.
+        -->
+        <referenceContainer name="content">
+            <block class="Magento\Backend\Block\Template"
+                   name="maxcode.core.publisher"
+                   before="-"
+                   template="Maxcode_Core::publisher.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Maxcode\Core\ViewModel\Publisher</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Backend\Block\Template"
+                   name="maxcode.core.intro"
+                   after="maxcode.core.publisher"
+                   template="Maxcode_Core::intro.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Maxcode\Core\ViewModel\ModuleIntro</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Backend\Block\Template"
+                   name="maxcode.core.promo"
+                   after="maxcode.core.intro"
+                   template="Maxcode_Core::promo/banner.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Maxcode\Core\ViewModel\PromoBanner</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Backend\Block\Template"
+                   name="maxcode.core.update.badge"
+                   template="Maxcode_Core::update-badge.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Maxcode\Core\ViewModel\UpdateBadge</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

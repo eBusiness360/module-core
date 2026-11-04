@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!--
+            L'onglet Maxcode est déclaré ICI, une seule fois : les sections des autres modules Maxcode
+            s'y rattachent avec <tab>maxcode</tab>.
+        -->
+        <tab id="maxcode" translate="label" sortOrder="400" class="maxcode-tab">
+            <label>Maxcode</label>
+        </tab>
+        <section id="maxcode_core" translate="label" sortOrder="10"
+                 showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top maxcode-core-section</class>
+            <label>Core</label>
+            <tab>maxcode</tab>
+            <resource>Maxcode_Core::config</resource>
+            <group id="modules" translate="label" type="text" sortOrder="10"
+                   showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Maxcode Modules</label>
+                <attribute type="expanded">1</attribute>
+                <field id="catalogue" translate="label" type="note" sortOrder="10"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Maxcode Modules</label>
+                    <frontend_model>Maxcode\Core\Block\Adminhtml\System\Config\Modules</frontend_model>
+                </field>
+            </group>
+            <group id="settings" translate="label" type="text" sortOrder="20"
+                   showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Common settings</label>
+                <field id="claude_api_key" translate="label comment" type="obscure" sortOrder="10"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Claude API key</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                    <comment>Shared by the Maxcode modules that use the Claude API. Stored encrypted. Maxcode Core itself never uses this key and never sends it anywhere.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

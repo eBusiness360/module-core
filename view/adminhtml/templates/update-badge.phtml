@@ -1,0 +1,21 @@
+<?php
+/**
+ * Compteur de mises à jour sur l'onglet Maxcode du menu de gauche (voir web/js/update-badge.js).
+ *
+ * @var \Magento\Backend\Block\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Maxcode\Core\ViewModel\UpdateBadge $viewModel
+ */
+$viewModel = $block->getData('view_model');
+$config = $viewModel->getConfig();
+if ($config === null) {
+    return;
+}
+?>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Maxcode_Core/js/update-badge": <?= /* @noEscape */ json_encode($config, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_THROW_ON_ERROR) ?>
+    }
+}
+</script>

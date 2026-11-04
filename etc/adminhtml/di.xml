@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!--
+        Un module Maxcode (gratuit ou payant) déclare ici, dans son propre etc/adminhtml/di.xml, SA MINI-DOCUMENTATION,
+        affichée en haut de sa page de configuration. Le nom, la description courte et le lien « Documentation
+        complète » viennent du catalogue de Maxcode_Core (etc/catalog.json, champ docs_url) : on ne déclare que
+        résumé et points clés, facultatifs.
+
+        <type name="Maxcode\Core\Model\Intro\IntroPool">
+            <arguments>
+                <argument name="intros" xsi:type="array">
+                    <item name="mon_module" xsi:type="array">
+                        <item name="section" xsi:type="string">id_de_la_section_de_config</item>
+                        <item name="module" xsi:type="string">Maxcode_MonModule</item>
+                        <item name="summary" xsi:type="string">Résumé (facultatif)</item>
+                        <item name="points" xsi:type="array">
+                            <item name="0" xsi:type="string">Point clé</item>
+                            <item name="1" xsi:type="string">Autre point clé</item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </type>
+
+        PROMOTIONS : la règle de la gamme est que les nouveaux modules ne sont promus QUE sur la page de Maxcode_Core
+        (ci-dessous). Les autres modules ne déclarent pas de PromotionPool : pas de bandeau « Allez plus loin » sur
+        leur page de configuration.
+
+        Les textes sont des chaînes anglaises, traduites par le i18n du module qui les déclare.
+        Les modules cités doivent figurer dans etc/catalog.json de Maxcode_Core.
+    -->
+
+    <type name="Maxcode\Core\Model\Intro\IntroPool">
+        <arguments>
+            <argument name="intros" xsi:type="array">
+                <item name="maxcode_core" xsi:type="array">
+                    <item name="section" xsi:type="string">maxcode_core</item>
+                    <item name="module" xsi:type="string">Maxcode_Core</item>
+                    <item name="points" xsi:type="array">
+                        <item name="0" xsi:type="string">One Maxcode tab gathers the settings of every Maxcode module.</item>
+                        <item name="1" xsi:type="string">The list below shows the whole range and what is installed on this site.</item>
+                        <item name="2" xsi:type="string">Common settings, such as the Claude API key, are entered once for all Maxcode modules.</item>
+                        <item name="3" xsi:type="string">No telemetry: the catalogue ships with the module, and the only request is the update check you start yourself.</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Maxcode\Core\Model\Promo\PromotionPool">
+        <arguments>
+            <argument name="promotions" xsi:type="array">
+                <item name="maxcode_core_search_insights" xsi:type="array">
+                    <item name="section" xsi:type="string">maxcode_core</item>
+                    <item name="paid_module" xsi:type="string">Maxcode_SearchInsights</item>
+                    <item name="title" xsi:type="string">New: Search Insights</item>
+                    <item name="text" xsi:type="string">Coming soon: follow what shoppers search for, what they click and what sells, spot the searches that find nothing, and get an AI shopping assistant.</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

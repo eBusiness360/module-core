@@ -1,0 +1,105 @@
+{
+    "contact_url": "https://www.ebusiness360.fr/contact/",
+    "publisher": {
+        "site": "https://www.ebusiness360.fr/",
+        "modules": "https://www.ebusiness360.fr/modules/",
+        "news": "https://www.ebusiness360.fr/actus-tech-magento2/"
+    },
+    "modules": [
+        {
+            "module": "Maxcode_Core",
+            "package": "maxcode/module-core",
+            "latest_version": "1.0.0",
+            "type": "free",
+            "name": "Core",
+            "description": "Shared foundation of the Maxcode range: a single admin tab, this catalogue and the upgrade banner.",
+            "url": null,
+            "docs_url": "https://github.com/eBusiness360/module-core"
+        },
+        {
+            "module": "Maxcode_AdminBranding",
+            "package": "maxcode/module-admin-branding",
+            "latest_version": "2.0.4",
+            "type": "free",
+            "name": "Admin Theme",
+            "description": "A polished look for the Magento admin: buttons, borders and separators, plus a configurable logo and favicon.",
+            "url": "https://packagist.org/packages/maxcode/module-admin-branding",
+            "docs_url": "https://github.com/eBusiness360/module-admin-branding"
+        },
+        {
+            "module": "Maxcode_SitemapExcludeCms",
+            "package": "maxcode/module-sitemap-exclude-cms",
+            "latest_version": "1.0.2",
+            "type": "free",
+            "name": "Sitemap Exclude CMS",
+            "description": "One switch on each CMS page to keep it out of the XML sitemap.",
+            "url": "https://packagist.org/packages/maxcode/module-sitemap-exclude-cms",
+            "docs_url": "https://github.com/eBusiness360/module-sitemap-exclude-cms"
+        },
+        {
+            "module": "Maxcode_TranslationFixes",
+            "package": "maxcode/module-translation-fixes",
+            "latest_version": "1.0.1",
+            "type": "free",
+            "name": "Translation Fixes",
+            "description": "Makes translatable the Magento strings that are not exposed to translation.",
+            "url": "https://packagist.org/packages/maxcode/module-translation-fixes",
+            "docs_url": "https://github.com/eBusiness360/module-translation-fixes"
+        },
+        {
+            "module": "Maxcode_SearchRelevance",
+            "package": "maxcode/module-search-relevance",
+            "latest_version": "1.4.0",
+            "type": "free",
+            "name": "Search Relevance",
+            "description": "Typo-tolerant suggestions for Smile ElasticSuite, plus search weights and starter synonyms in the admin.",
+            "url": null
+        },
+        {
+            "module": "Maxcode_ProductQuestion",
+            "package": "maxcode/module-product-question",
+            "latest_version": "1.0.0",
+            "type": "free",
+            "name": "Product Question",
+            "description": "A product page block that sends shoppers to the contact form with the product already mentioned.",
+            "url": null
+        },
+        {
+            "module": "Maxcode_Faq",
+            "package": "maxcode/module-faq",
+            "latest_version": "1.0.0",
+            "type": "free",
+            "name": "FAQ",
+            "description": "One independent FAQ for your store: groups and questions per store view, FAQ page, widget, product, category and CMS blocks, FAQPage markup.",
+            "url": null,
+            "docs_url": "https://github.com/eBusiness360/module-faq"
+        },
+        {
+            "module": "Maxcode_AdminBrandingPro",
+            "package": "maxcode/module-admin-branding-pro",
+            "latest_version": "1.1.1",
+            "type": "paid",
+            "name": "Admin Theme Pro",
+            "description": "Set the colours, shapes and typography of the Maxcode admin theme from the back office.",
+            "url": null
+        },
+        {
+            "module": "Maxcode_ProductAttachment",
+            "package": "maxcode/module-product-attachment",
+            "latest_version": "2.4.2",
+            "type": "paid",
+            "name": "Product Attachment",
+            "description": "A document library attached to your products: customer group and store view restrictions, a product tab and secure downloads.",
+            "url": null
+        },
+        {
+            "module": "Maxcode_SearchInsights",
+            "package": "maxcode/module-search-insights",
+            "type": "paid",
+            "availability": "soon",
+            "name": "Search Insights",
+            "description": "Follow searches, clicks and sales from the back office and spot the searches that find nothing.",
+            "url": null
+        }
+    ]
+}

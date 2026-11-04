@@ -1,0 +1,133 @@
+<?php
+/**
+ * Page « Modules Maxcode » : catalogue embarqué, gratuits puis payants.
+ *
+ * @var \Magento\Backend\Block\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Maxcode\Core\ViewModel\Modules $viewModel
+ */
+$viewModel = $block->getData('view_model');
+$groups = $viewModel->getGroups();
+$updateCount = $viewModel->getUpdateCount();
+$sections = [
+    'free' => [
+        'title' => __('Free modules'),
+        'intro' => __('Free to use on any number of your Magento installations.'),
+    ],
+    'paid' => [
+        'title' => __('Paid modules'),
+        'intro' => __('Extensions with support and updates. They build on the free modules above.'),
+    ],
+];
+?>
+<div class="maxcode-core-modules">
+    <p class="maxcode-core-modules__lead">
+        <?= $escaper->escapeHtml(__('The Maxcode range for Magento 2. This list ships with the module: nothing is fetched from the Internet unless you ask for it with the button below, and no data about your site is ever sent.')) ?>
+    </p>
+
+    <?php $lastCheck = $viewModel->getLastCheckLabel(); ?>
+    <div class="maxcode-core-modules__check">
+        <button type="button" class="action-default maxcode-core-modules__check-button"
+                data-mage-init='<?= $escaper->escapeHtmlAttr(json_encode(['Maxcode_Core/js/check-updates' => ['url' => $viewModel->getCheckUrl()]], JSON_THROW_ON_ERROR)) ?>'>
+            <span><?= $escaper->escapeHtml(__('Check for updates')) ?></span>
+        </button>
+        <p class="maxcode-core-modules__check-note">
+            <?= $escaper->escapeHtml(__('Only when you click: one request to packagist.org for each free module, which sends nothing about your site. Paid modules are never queried.')) ?>
+            <?php if ($lastCheck !== null): ?>
+                <strong><?= $escaper->escapeHtml(__('Last check: %1', $lastCheck)) ?></strong>
+            <?php else: ?>
+                <strong><?= $escaper->escapeHtml(__('Never checked: the versions shown are those known when this version of Maxcode Core was published.')) ?></strong>
+            <?php endif; ?>
+        </p>
+    </div>
+
+    <?php if ($updateCount > 0): ?>
+        <p class="maxcode-core-modules__updates" role="status">
+            <span class="maxcode-core-modules__updates-count"><?= (int) $updateCount ?></span>
+            <?= $escaper->escapeHtml(__('Maxcode modules can be updated.')) ?>
+        </p>
+    <?php endif; ?>
+
+    <?php foreach ($sections as $type => $section): ?>
+        <?php if (empty($groups[$type])) { continue; } ?>
+        <?php $headingId = 'maxcode-core-modules-' . $type; ?>
+        <section class="maxcode-core-modules__group" aria-labelledby="<?= $escaper->escapeHtmlAttr($headingId) ?>">
+            <h2 id="<?= $escaper->escapeHtmlAttr($headingId) ?>" class="maxcode-core-modules__heading">
+                <?= $escaper->escapeHtml($section['title']) ?>
+            </h2>
+            <p class="maxcode-core-modules__intro"><?= $escaper->escapeHtml($section['intro']) ?></p>
+            <div class="maxcode-core-modules__scroll">
+                <table class="maxcode-core-table">
+                    <caption class="maxcode-core-visually-hidden"><?= $escaper->escapeHtml($section['title']) ?></caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"><?= $escaper->escapeHtml(__('Module')) ?></th>
+                            <th scope="col"><?= $escaper->escapeHtml(__('Description')) ?></th>
+                            <th scope="col"><?= $escaper->escapeHtml(__('Type')) ?></th>
+                            <th scope="col"><?= $escaper->escapeHtml(__('Status')) ?></th>
+                            <th scope="col"><?= $escaper->escapeHtml(__('Installed version')) ?></th>
+                            <th scope="col"><?= $escaper->escapeHtml(__('Latest version')) ?></th>
+                            <th scope="col"><?= $escaper->escapeHtml(__('Details')) ?></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($groups[$type] as $row): ?>
+                            <tr<?= $row['has_update'] ? ' class="maxcode-core-table__row--update"' : '' ?>>
+                                <th scope="row" class="maxcode-core-table__name"><?= $escaper->escapeHtml($row['name']) ?></th>
+                                <td><?= $escaper->escapeHtml($row['description']) ?></td>
+                                <td>
+                                    <span class="maxcode-core-badge maxcode-core-badge--<?= $escaper->escapeHtmlAttr($type) ?>">
+                                        <?= $escaper->escapeHtml($row['type_label']) ?>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="maxcode-core-status maxcode-core-status--<?= $escaper->escapeHtmlAttr($row['state']) ?>">
+                                        <?= $escaper->escapeHtml($row['status_label']) ?>
+                                    </span>
+                                </td>
+                                <td>
+                                    <?php if ($row['version'] !== null): ?>
+                                        <span class="maxcode-core-version"><?= $escaper->escapeHtml($row['version']) ?></span>
+                                    <?php else: ?>
+                                        <span aria-hidden="true">&mdash;</span>
+                                        <span class="maxcode-core-visually-hidden"><?= $escaper->escapeHtml(__('Not available')) ?></span>
+                                    <?php endif; ?>
+                                </td>
+                                <td>
+                                    <?php if ($row['latest_version'] !== null): ?>
+                                        <span class="maxcode-core-version<?= $row['has_update'] ? ' maxcode-core-version--new' : '' ?>"><?= $escaper->escapeHtml($row['latest_version']) ?></span>
+                                        <?php if ($row['has_update']): ?>
+                                            <span class="maxcode-core-update-flag"><?= $escaper->escapeHtml(__('Update available')) ?></span>
+                                        <?php endif; ?>
+                                    <?php else: ?>
+                                        <span aria-hidden="true">&mdash;</span>
+                                        <span class="maxcode-core-visually-hidden"><?= $escaper->escapeHtml(__('Not available')) ?></span>
+                                    <?php endif; ?>
+                                </td>
+                                <td>
+                                    <?php if ($row['docs_url'] !== null): ?>
+                                        <a class="maxcode-core-table__link" href="<?= $escaper->escapeUrl($row['docs_url']) ?>">
+                                            <?= $escaper->escapeHtml(__('Documentation')) ?>
+                                        </a>
+                                    <?php endif; ?>
+                                    <?php if ($row['url'] !== null): ?>
+                                        <a class="maxcode-core-table__link" href="<?= $escaper->escapeUrl($row['url']) ?>" target="_blank" rel="noopener noreferrer">
+                                            <?= $escaper->escapeHtml($row['link_label']) ?>
+                                            <span class="maxcode-core-visually-hidden">
+                                                <?= $escaper->escapeHtml(__('(opens in a new tab)')) ?>
+                                            </span>
+                                        </a>
+                                    <?php elseif ($row['docs_url'] === null): ?>
+                                        <span aria-hidden="true">&mdash;</span>
+                                        <span class="maxcode-core-visually-hidden"><?= $escaper->escapeHtml(__('No page available')) ?></span>
+                                    <?php endif; ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    <?php endforeach; ?>
+
+</div>

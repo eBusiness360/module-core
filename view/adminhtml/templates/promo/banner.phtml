@@ -1,0 +1,26 @@
+<?php
+/**
+ * Bandeau « Allez plus loin » : un seul, sobre, présent tant que le module payant n'est pas installé.
+ *
+ * @var \Magento\Backend\Block\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Maxcode\Core\ViewModel\PromoBanner $viewModel
+ */
+$viewModel = $block->getData('view_model');
+$banner = $viewModel->getBanner($block->getData('promotion_id'));
+if ($banner === null) {
+    return;
+}
+$titleId = 'maxcode-core-promo-title';
+?>
+<section id="maxcode-core-promo" class="maxcode-core-promo" aria-labelledby="<?= $escaper->escapeHtmlAttr($titleId) ?>">
+    <h2 id="<?= $escaper->escapeHtmlAttr($titleId) ?>" class="maxcode-core-promo__title">
+        <?= $escaper->escapeHtml($banner['title']) ?>
+    </h2>
+    <p class="maxcode-core-promo__text"><?= $escaper->escapeHtml($banner['text']) ?></p>
+    <a class="maxcode-core-promo__link" href="<?= $escaper->escapeUrl($banner['url']) ?>"
+       target="_blank" rel="noopener noreferrer">
+        <?= $escaper->escapeHtml($banner['link_label']) ?>
+        <span class="maxcode-core-visually-hidden"><?= $escaper->escapeHtml(__('(opens in a new tab)')) ?></span>
+    </a>
+</section>

@@ -1,0 +1,23 @@
+<?php
+/**
+ * Documentation embarquée d'un module : son README, rendu et nettoyé par Maxcode\Core\Model\Docs\MarkdownRenderer.
+ *
+ * @var \Magento\Backend\Block\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Maxcode\Core\ViewModel\Docs $viewModel
+ */
+$viewModel = $block->getData('view_model');
+$document = $viewModel->getDocument((string) $block->getRequest()->getParam('module'));
+if ($document === null) {
+    return;
+}
+?>
+<p class="maxcode-core-doc__back">
+    <a href="<?= $escaper->escapeUrl($viewModel->getModulesUrl()) ?>">
+        <?= $escaper->escapeHtml(__('Back to Maxcode Core')) ?>
+    </a>
+</p>
+<article class="maxcode-core-doc" aria-label="<?= $escaper->escapeHtmlAttr(__('Documentation — %1', $document['name'])) ?>">
+    <?php // Le HTML vient du convertisseur Markdown, configuré pour supprimer tout HTML brut et les liens dangereux. ?>
+    <?= /* @noEscape */ $document['html'] ?>
+</article>

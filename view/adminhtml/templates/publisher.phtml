@@ -1,0 +1,46 @@
+<?php
+/**
+ * Bandeau de présentation de l'éditeur : eBusiness360 vend les modules développés sous le nom de développeur Maxcode.
+ *
+ * @var \Magento\Backend\Block\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Maxcode\Core\ViewModel\Publisher $viewModel
+ */
+$viewModel = $block->getData('view_model');
+$banner = $viewModel->getBanner();
+if ($banner === null) {
+    return;
+}
+$titleId = 'maxcode-core-publisher-title';
+?>
+<section class="maxcode-core-publisher" aria-labelledby="<?= $escaper->escapeHtmlAttr($titleId) ?>">
+    <span class="maxcode-core-publisher__orb maxcode-core-publisher__orb--one" aria-hidden="true"></span>
+    <span class="maxcode-core-publisher__orb maxcode-core-publisher__orb--two" aria-hidden="true"></span>
+    <div class="maxcode-core-publisher__body">
+        <p class="maxcode-core-publisher__eyebrow">
+            <span class="maxcode-core-publisher__ribbon">Maxcode &times; eBusiness360</span>
+            <?= $escaper->escapeHtml(__('Modules for Magento 2, published by eBusiness360')) ?>
+        </p>
+        <h2 id="<?= $escaper->escapeHtmlAttr($titleId) ?>" class="maxcode-core-publisher__title">
+            <?= $escaper->escapeHtml(__('eBusiness360 publishes the modules of the developer Maxcode.')) ?>
+        </h2>
+        <p class="maxcode-core-publisher__text">
+            <?= $escaper->escapeHtml(__('Every Maxcode module is designed and developed by eBusiness360 under the developer name Maxcode. Browse the whole range, free and paid, on our website.')) ?>
+        </p>
+        <ul class="maxcode-core-publisher__points">
+            <?php foreach ($banner['points'] as $point): ?>
+                <li><?= $escaper->escapeHtml($point) ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <div class="maxcode-core-publisher__actions">
+        <?php foreach ($banner['links'] as $link): ?>
+            <a class="maxcode-core-publisher__button<?= $link['primary'] ? ' maxcode-core-publisher__button--primary' : '' ?>"
+               href="<?= $escaper->escapeUrl($link['url']) ?>" target="_blank" rel="noopener noreferrer">
+                <?= $escaper->escapeHtml($link['label']) ?>
+                <span aria-hidden="true">&rarr;</span>
+                <span class="maxcode-core-visually-hidden"><?= $escaper->escapeHtml(__('(opens in a new tab)')) ?></span>
+            </a>
+        <?php endforeach; ?>
+    </div>
+</section>
