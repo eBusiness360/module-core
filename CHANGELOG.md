@@ -3,6 +3,12 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.2] — 2026-11-04
+
+### Modifié
+- Catalogue embarqué : Search Insights rejoint Search Relevance (un seul module, payant) ; AI Assistant ajouté (payant). Les deux sont « bientôt disponibles » jusqu'à leur livraison.
+- Promotion de la page Core : AI Assistant (à la place de Search Insights).
+
 ## [1.0.1] — 2026-11-04
 
 ### Modifié

@@ -100,9 +100,9 @@ Core déclare ses propres promotions dans son `etc/adminhtml/di.xml` :
 <type name="Maxcode\Core\Model\Promo\PromotionPool">
     <arguments>
         <argument name="promotions" xsi:type="array">
-            <item name="maxcode_core_search_insights" xsi:type="array">
+            <item name="maxcode_core_ai_assistant" xsi:type="array">
                 <item name="section" xsi:type="string">maxcode_core</item>
-                <item name="paid_module" xsi:type="string">Maxcode_SearchInsights</item>
+                <item name="paid_module" xsi:type="string">Maxcode_AiAssistant</item>
                 <item name="text" xsi:type="string">Une phrase qui dit ce que fait le nouveau module.</item>
                 <!-- facultatif : title (défaut « Allez plus loin avec <module> »), url (défaut : fiche du catalogue) -->
             </item>

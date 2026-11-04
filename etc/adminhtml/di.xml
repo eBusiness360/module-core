@@ -51,11 +51,11 @@
     <type name="Maxcode\Core\Model\Promo\PromotionPool">
         <arguments>
             <argument name="promotions" xsi:type="array">
-                <item name="maxcode_core_search_insights" xsi:type="array">
+                <item name="maxcode_core_ai_assistant" xsi:type="array">
                     <item name="section" xsi:type="string">maxcode_core</item>
-                    <item name="paid_module" xsi:type="string">Maxcode_SearchInsights</item>
-                    <item name="title" xsi:type="string">New: Search Insights</item>
-                    <item name="text" xsi:type="string">Coming soon: follow what shoppers search for, what they click and what sells, spot the searches that find nothing, and get an AI shopping assistant.</item>
+                    <item name="paid_module" xsi:type="string">Maxcode_AiAssistant</item>
+                    <item name="title" xsi:type="string">New: AI Assistant</item>
+                    <item name="text" xsi:type="string">Coming soon: an AI shopping assistant that answers shoppers from your catalog, pages and FAQ, with the name and face you choose. Works with Claude, Mistral, Gemini or any OpenAI-compatible service.</item>
                 </item>
             </argument>
         </arguments>

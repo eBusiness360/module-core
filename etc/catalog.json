@@ -47,15 +47,6 @@
             "docs_url": "https://github.com/eBusiness360/module-translation-fixes"
         },
         {
-            "module": "Maxcode_SearchRelevance",
-            "package": "maxcode/module-search-relevance",
-            "latest_version": "1.4.0",
-            "type": "free",
-            "name": "Search Relevance",
-            "description": "Typo-tolerant suggestions for Smile ElasticSuite, plus search weights and starter synonyms in the admin.",
-            "url": null
-        },
-        {
             "module": "Maxcode_ProductQuestion",
             "package": "maxcode/module-product-question",
             "latest_version": "1.0.0",
@@ -93,12 +84,21 @@
             "url": null
         },
         {
-            "module": "Maxcode_SearchInsights",
-            "package": "maxcode/module-search-insights",
+            "module": "Maxcode_SearchRelevance",
+            "package": "maxcode/module-search-relevance",
             "type": "paid",
             "availability": "soon",
-            "name": "Search Insights",
-            "description": "Follow searches, clicks and sales from the back office and spot the searches that find nothing.",
+            "name": "Search Relevance",
+            "description": "Search relevance and analytics: a search layer, search weights, unwanted terms kept out, and a dashboard of what shoppers search for and what finds nothing.",
+            "url": null
+        },
+        {
+            "module": "Maxcode_AiAssistant",
+            "package": "maxcode/module-ai-assistant",
+            "type": "paid",
+            "availability": "soon",
+            "name": "AI Assistant",
+            "description": "An AI shopping assistant that answers shoppers from your catalog, pages and FAQ, with the name and face you choose.",
             "url": null
         }
     ]
