@@ -9,11 +9,11 @@
         {
             "module": "Maxcode_Core",
             "package": "maxcode/module-core",
-            "latest_version": "1.0.0",
+            "latest_version": "1.0.1",
             "type": "free",
             "name": "Core",
             "description": "Shared foundation of the Maxcode range: a single admin tab, this catalogue and the upgrade banner.",
-            "url": null,
+            "url": "https://packagist.org/packages/maxcode/module-core",
             "docs_url": "https://github.com/eBusiness360/module-core"
         },
         {
@@ -71,7 +71,7 @@
             "type": "free",
             "name": "FAQ",
             "description": "One independent FAQ for your store: groups and questions per store view, FAQ page, widget, product, category and CMS blocks, FAQPage markup.",
-            "url": null,
+            "url": "https://packagist.org/packages/maxcode/module-faq",
             "docs_url": "https://github.com/eBusiness360/module-faq"
         },
         {

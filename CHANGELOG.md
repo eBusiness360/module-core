@@ -3,6 +3,11 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.1] — 2026-11-04
+
+### Modifié
+- Catalogue embarqué : liens Packagist de Core et de FAQ, ajout du module FAQ, versions à jour (Search Relevance 1.4.0) et description de Search Insights sans l'assistant IA, devenu un module à part.
+
 ## [1.0.0] — 2026-10-29 — Première version
 
 ### Ajouté
