@@ -3,6 +3,11 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.3] — 2026-11-18
+
+### Modifié
+- Catalogue embarqué : ajout de Tracking Links (gratuit, liens Packagist et GitHub) ; dernière version de Core corrigée (elle était restée à 1.0.1).
+
 ## [1.0.2] — 2026-11-04
 
 ### Modifié

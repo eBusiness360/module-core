@@ -9,7 +9,7 @@
         {
             "module": "Maxcode_Core",
             "package": "maxcode/module-core",
-            "latest_version": "1.0.1",
+            "latest_version": "1.0.3",
             "type": "free",
             "name": "Core",
             "description": "Shared foundation of the Maxcode range: a single admin tab, this catalogue and the upgrade banner.",
@@ -45,6 +45,16 @@
             "description": "Makes translatable the Magento strings that are not exposed to translation.",
             "url": "https://packagist.org/packages/maxcode/module-translation-fixes",
             "docs_url": "https://github.com/eBusiness360/module-translation-fixes"
+        },
+        {
+            "module": "Maxcode_TrackingLinks",
+            "package": "maxcode/module-tracking-links",
+            "latest_version": "1.1.2",
+            "type": "free",
+            "name": "Tracking Links",
+            "description": "Sends customers to the carrier's own tracking page from the shipment e-mail and the tracking page, even when the tracking number was typed by hand.",
+            "url": "https://packagist.org/packages/maxcode/module-tracking-links",
+            "docs_url": "https://github.com/eBusiness360/module-tracking-links"
         },
         {
             "module": "Maxcode_ProductQuestion",

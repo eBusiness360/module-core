@@ -61,6 +61,7 @@
 "Coming soon","Bientôt disponible"
 "Shared foundation of the Maxcode range: a single admin tab, this catalogue and the upgrade banner.","Socle commun de la gamme Maxcode : un onglet admin unique, ce catalogue et le bandeau d'évolution."
 "A polished look for the Magento admin: buttons, borders and separators, plus a configurable logo and favicon.","Un habillage soigné pour l'administration Magento : boutons, bordures et séparateurs, avec logo et favicon configurables."
+"Sends customers to the carrier's own tracking page from the shipment e-mail and the tracking page, even when the tracking number was typed by hand.","Envoie vos clients sur la page de suivi du transporteur depuis l'e-mail d'expédition et la page de suivi, même quand le numéro a été saisi à la main."
 "One switch on each CMS page to keep it out of the XML sitemap.","Un interrupteur sur chaque page CMS pour la garder hors du plan de site XML."
 "Makes translatable the Magento strings that are not exposed to translation.","Rend traduisibles les chaînes Magento qui ne sont pas exposées à la traduction."
 "A product page block that sends shoppers to the contact form with the product already mentioned.","Un bloc sur la fiche produit qui envoie vos clients vers le formulaire de contact avec le produit déjà mentionné."
