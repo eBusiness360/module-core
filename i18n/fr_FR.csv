@@ -73,3 +73,4 @@
 "AI Assistant","Assistant IA"
 "New: AI Assistant","Nouveau : Assistant IA"
 "Now available: an AI shopping assistant that answers shoppers from your catalog, pages and FAQ, with the name and face you choose. Works with Claude, Mistral, Gemini or any OpenAI-compatible service.","Disponible : une assistante d'achat IA qui répond à vos clients à partir de votre catalogue, de vos pages et de votre FAQ, avec le nom et le visage de votre choix. Fonctionne avec Claude, Mistral, Gemini ou tout service compatible OpenAI."
+"An editable welcome popup shown once to each new visitor, with its content in a CMS block per store view.","Une popup d'accueil éditable, affichée une seule fois à chaque nouveau visiteur, avec son contenu dans un bloc CMS par vue de magasin."

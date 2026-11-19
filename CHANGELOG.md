@@ -3,6 +3,13 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.7] — 2026-11-19
+
+### Modifié
+- Catalogue embarqué : Popup (Maxcode_Popup 1.0.2, gratuit) est ajouté.
+- Product Question : dernière version annoncée 1.0.0 → 1.0.1, avec ses liens Packagist et GitHub.
+- Maxcode_Core : dernière version annoncée 1.0.3 → 1.0.7.
+
 ## [1.0.6] — 2026-11-19
 
 ### Modifié
