@@ -55,7 +55,7 @@
                     <item name="section" xsi:type="string">maxcode_core</item>
                     <item name="paid_module" xsi:type="string">Maxcode_AiAssistant</item>
                     <item name="title" xsi:type="string">New: AI Assistant</item>
-                    <item name="text" xsi:type="string">Coming soon: an AI shopping assistant that answers shoppers from your catalog, pages and FAQ, with the name and face you choose. Works with Claude, Mistral, Gemini or any OpenAI-compatible service.</item>
+                    <item name="text" xsi:type="string">Now available: an AI shopping assistant that answers shoppers from your catalog, pages and FAQ, with the name and face you choose. Works with Claude, Mistral, Gemini or any OpenAI-compatible service.</item>
                 </item>
             </argument>
         </arguments>

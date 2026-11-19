@@ -3,6 +3,11 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.5] — 2026-11-19
+
+### Modifié
+- Catalogue embarqué : AI Assistant est disponible (version 1.4.0) ; il n'est plus « bientôt disponible ». Search Relevance reste annoncé « bientôt ». La bannière de promotion de l'assistant IA le dit.
+
 ## [1.0.4] — 2026-11-19
 
 ### Modifié

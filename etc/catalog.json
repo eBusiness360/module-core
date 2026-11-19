@@ -105,8 +105,8 @@
         {
             "module": "Maxcode_AiAssistant",
             "package": "maxcode/module-ai-assistant",
+            "latest_version": "1.4.0",
             "type": "paid",
-            "availability": "soon",
             "name": "AI Assistant",
             "description": "An AI shopping assistant that answers shoppers from your catalog, pages and FAQ, with the name and face you choose.",
             "url": null
