@@ -19,7 +19,7 @@
         {
             "module": "Maxcode_AdminBranding",
             "package": "maxcode/module-admin-branding",
-            "latest_version": "2.0.4",
+            "latest_version": "2.0.5",
             "type": "free",
             "name": "Admin Theme",
             "description": "A polished look for the Magento admin: buttons, borders and separators, plus a configurable logo and favicon.",
@@ -68,7 +68,7 @@
         {
             "module": "Maxcode_Faq",
             "package": "maxcode/module-faq",
-            "latest_version": "1.0.0",
+            "latest_version": "1.0.1",
             "type": "free",
             "name": "FAQ",
             "description": "One independent FAQ for your store: groups and questions per store view, FAQ page, widget, product, category and CMS blocks, FAQPage markup.",

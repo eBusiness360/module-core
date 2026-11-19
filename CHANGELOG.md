@@ -3,6 +3,13 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.4] — 2026-11-19
+
+### Modifié
+- Catalogue embarqué : les dernières versions annoncées suivent celles publiées sur Packagist (modules gratuits).
+  - Maxcode_AdminBranding : dernière version annoncée 2.0.4 → 2.0.5.
+  - Maxcode_Faq : dernière version annoncée 1.0.0 → 1.0.1.
+
 ## [1.0.3] — 2026-11-18
 
 ### Modifié
