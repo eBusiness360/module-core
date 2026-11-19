@@ -96,8 +96,8 @@
         {
             "module": "Maxcode_SearchRelevance",
             "package": "maxcode/module-search-relevance",
+            "latest_version": "2.1.0",
             "type": "paid",
-            "availability": "soon",
             "name": "Search Relevance",
             "description": "Search relevance and analytics: a search layer, search weights, unwanted terms kept out, and a dashboard of what shoppers search for and what finds nothing.",
             "url": null

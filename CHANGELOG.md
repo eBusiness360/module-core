@@ -3,6 +3,11 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.6] — 2026-11-19
+
+### Modifié
+- Catalogue embarqué : Search Relevance est disponible (version 2.1.0, payant, sans lien public : son dépôt est privé) ; il n'est plus « bientôt disponible ». Plus aucun module du catalogue n'est annoncé « bientôt ».
+
 ## [1.0.5] — 2026-11-19
 
 ### Modifié
