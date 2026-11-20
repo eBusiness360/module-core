@@ -8,7 +8,7 @@
 
 ![License: free EULA](https://img.shields.io/badge/license-free%20EULA-1E4FA3)
 ![Magento 2.4](https://img.shields.io/badge/Magento-2.4.x-F26322)
-![PHP 8.2+](https://img.shields.io/badge/PHP-8.2%2B-777BB4)
+![PHP 8.2 to 8.5](https://img.shields.io/badge/PHP-8.2%20to%208.5-777BB4)
 ![Packagist](https://img.shields.io/packagist/v/maxcode/module-core?color=0F1E4D)
 
 </div>
@@ -48,7 +48,7 @@ bin/magento cache:flush
 ```
 
 The module has no database schema; a single `setup:upgrade` is enough. Requirements: Magento Open Source or
-Adobe Commerce 2.4.x, PHP 8.2 or later.
+Adobe Commerce 2.4.x, PHP 8.2 to 8.5.
 
 ## Usage
 

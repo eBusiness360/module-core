@@ -8,7 +8,7 @@
 
 ![Licence : CLUF gratuit](https://img.shields.io/badge/licence-CLUF%20gratuit-1E4FA3)
 ![Magento 2.4](https://img.shields.io/badge/Magento-2.4.x-F26322)
-![PHP 8.2+](https://img.shields.io/badge/PHP-8.2%2B-777BB4)
+![PHP 8.2 à 8.5](https://img.shields.io/badge/PHP-8.2%20%C3%A0%208.5-777BB4)
 ![Packagist](https://img.shields.io/packagist/v/maxcode/module-core?color=0F1E4D)
 
 </div>
@@ -52,7 +52,7 @@ bin/magento cache:flush
 ```
 
 Le module n'a pas de schéma de base de données : un seul `setup:upgrade` suffit. Prérequis : Magento Open
-Source ou Adobe Commerce 2.4.x, PHP 8.2 ou supérieur.
+Source ou Adobe Commerce 2.4.x, PHP 8.2 à 8.5.
 
 ## Utilisation
 

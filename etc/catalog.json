@@ -9,7 +9,7 @@
         {
             "module": "Maxcode_Core",
             "package": "maxcode/module-core",
-            "latest_version": "1.0.8",
+            "latest_version": "1.0.9",
             "type": "free",
             "name": "Core",
             "description": "Shared foundation of the Maxcode range: a single admin tab, this catalogue and the upgrade banner.",

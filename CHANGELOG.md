@@ -3,6 +3,12 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.9] — 2026-11-20
+
+### Ajouté
+- Compatibilité PHP 8.5 : `composer.json` accepte désormais PHP 8.2 à 8.5. Les 58 fichiers du module passent le contrôle de syntaxe sous PHP 8.5.12 et les 164 tests unitaires (377 assertions) réussissent, sans aucune dépréciation.
+- Catalogue embarqué : Core 1.0.9.
+
 ## [1.0.8] — 2026-11-20
 
 ### Modifié
