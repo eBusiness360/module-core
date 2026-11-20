@@ -9,7 +9,7 @@
         {
             "module": "Maxcode_Core",
             "package": "maxcode/module-core",
-            "latest_version": "1.0.9",
+            "latest_version": "1.0.10",
             "type": "free",
             "name": "Core",
             "description": "Shared foundation of the Maxcode range: a single admin tab, this catalogue and the upgrade banner.",
@@ -39,7 +39,7 @@
         {
             "module": "Maxcode_TranslationFixes",
             "package": "maxcode/module-translation-fixes",
-            "latest_version": "1.0.2",
+            "latest_version": "1.0.3",
             "type": "free",
             "name": "Translation Fixes",
             "description": "Makes translatable the Magento strings that are not exposed to translation.",
@@ -89,7 +89,7 @@
         {
             "module": "Maxcode_AdminBrandingPro",
             "package": "maxcode/module-admin-branding-pro",
-            "latest_version": "1.1.1",
+            "latest_version": "1.1.2",
             "type": "paid",
             "name": "Admin Theme Pro",
             "description": "Set the colours, shapes and typography of the Maxcode admin theme from the back office.",
@@ -107,7 +107,7 @@
         {
             "module": "Maxcode_SearchRelevance",
             "package": "maxcode/module-search-relevance",
-            "latest_version": "2.1.0",
+            "latest_version": "2.1.5",
             "type": "paid",
             "name": "Search Relevance",
             "description": "Search relevance and analytics: a search layer, search weights, unwanted terms kept out, and a dashboard of what shoppers search for and what finds nothing.",
@@ -116,7 +116,7 @@
         {
             "module": "Maxcode_AiAssistant",
             "package": "maxcode/module-ai-assistant",
-            "latest_version": "1.4.0",
+            "latest_version": "1.4.8",
             "type": "paid",
             "name": "AI Assistant",
             "description": "An AI shopping assistant that answers shoppers from your catalog, pages and FAQ, with the name and face you choose.",

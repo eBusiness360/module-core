@@ -3,6 +3,11 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.10] — 2026-11-20
+
+### Modifié
+- Catalogue embarqué : dernières versions annoncées mises à jour (AI Assistant 1.4.8, Search Relevance 2.1.5, Translation Fixes 1.0.3, Admin Theme Pro 1.1.2, Core 1.0.10). Le bandeau de mise à jour signale donc les versions publiées depuis la 1.0.8, dont la compatibilité PHP 8.5. Aucun changement de code.
+
 ## [1.0.9] — 2026-11-20
 
 ### Ajouté
