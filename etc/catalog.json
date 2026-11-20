@@ -9,7 +9,7 @@
         {
             "module": "Maxcode_Core",
             "package": "maxcode/module-core",
-            "latest_version": "1.0.7",
+            "latest_version": "1.0.8",
             "type": "free",
             "name": "Core",
             "description": "Shared foundation of the Maxcode range: a single admin tab, this catalogue and the upgrade banner.",
@@ -39,7 +39,7 @@
         {
             "module": "Maxcode_TranslationFixes",
             "package": "maxcode/module-translation-fixes",
-            "latest_version": "1.0.1",
+            "latest_version": "1.0.2",
             "type": "free",
             "name": "Translation Fixes",
             "description": "Makes translatable the Magento strings that are not exposed to translation.",
@@ -59,7 +59,7 @@
         {
             "module": "Maxcode_ProductQuestion",
             "package": "maxcode/module-product-question",
-            "latest_version": "1.0.1",
+            "latest_version": "1.0.2",
             "type": "free",
             "name": "Product Question",
             "description": "A product page block that sends shoppers to the contact form with the product already mentioned.",
@@ -69,7 +69,7 @@
         {
             "module": "Maxcode_Faq",
             "package": "maxcode/module-faq",
-            "latest_version": "1.0.1",
+            "latest_version": "1.2.1",
             "type": "free",
             "name": "FAQ",
             "description": "One independent FAQ for your store: groups and questions per store view, FAQ page, widget, product, category and CMS blocks, FAQPage markup.",
@@ -79,7 +79,7 @@
         {
             "module": "Maxcode_Popup",
             "package": "maxcode/module-popup",
-            "latest_version": "1.0.2",
+            "latest_version": "1.0.3",
             "type": "free",
             "name": "Popup",
             "description": "An editable welcome popup shown once to each new visitor, with its content in a CMS block per store view.",

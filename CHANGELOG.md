@@ -3,6 +3,12 @@
 Toutes les évolutions notables du module sont consignées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/), versionnage [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.8] — 2026-11-20
+
+### Modifié
+- Documentation : badge de version Packagist dans le README.
+- Catalogue embarqué : dernières versions annoncées mises à jour (Popup 1.0.3, Product Question 1.0.2, FAQ 1.2.1, Translation Fixes 1.0.2, Core 1.0.8). Aucun changement de code.
+
 ## [1.0.7] — 2026-11-19
 
 ### Modifié

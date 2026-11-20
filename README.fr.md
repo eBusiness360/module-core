@@ -9,6 +9,7 @@
 ![Licence : CLUF gratuit](https://img.shields.io/badge/licence-CLUF%20gratuit-1E4FA3)
 ![Magento 2.4](https://img.shields.io/badge/Magento-2.4.x-F26322)
 ![PHP 8.2+](https://img.shields.io/badge/PHP-8.2%2B-777BB4)
+![Packagist](https://img.shields.io/packagist/v/maxcode/module-core?color=0F1E4D)
 
 </div>
 
